@@ -1,18 +1,17 @@
+<!-- Start Exploring the auth folder from auth.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Auth</title>
-<!-- change this link if folder structure is changed -->
+<!-- Here is the CSS for this file, which is currently responsible for hiding and showing login division and signup division -->
     <link rel="stylesheet" href="auth_style.css">
-    
-    
 </head>
+
 <body>
-    <Header></Header>
     <main>
 <!-- Login Division -->
     <div class="auth" id="login-div">
@@ -23,7 +22,7 @@
     <button id="create-account">Create A New Account?</button>
     </div>
 
-<!-- SingUp division -->
+<!-- SignUp division, I have given default values to the inputs for making development process easier you can remove them-->
     <div class="auth" id="signup-div">
     <h2>Signup</h2>
     <input type="text" id="signup-name" name="name" placeholder="Enter your Name" value="Abhishek"><br>
@@ -34,8 +33,9 @@
     <button id="have-account" >Already Have An Account?</button>
     </div> 
     </main>
-    <footer></footer>
 </body>
-<!-- change this link if the folder structure is changed -->
+<!-- Javascript is defined after HTML and CSS -->
 <script src="auth_script.js" type="module"></script>
 </html>
+
+<!-- Now just check the auth_style.css to understand how styling is done on this page -->

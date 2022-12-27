@@ -1,7 +1,8 @@
+/* Start Exploring the auth folder from auth.html  */
+
+/* So we have hidden the login by default*/
 #login-div{
     display:none;
 }
-
-#result-div{
-    display: none;
-}
+/* Actually both login and signup divisions lie at the same place but we can toggle there appearence with the help of auth_script.js*/
+/* Next move on to the auth_script.js */
