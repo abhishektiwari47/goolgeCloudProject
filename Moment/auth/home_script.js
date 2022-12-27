@@ -1,11 +1,6 @@
 
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-  import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
   import { getDatabase, ref, get,child,onValue} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  
  
   const firebaseConfig = {
     apiKey: "AIzaSyAwdK44oSBI82ECPKRTE-MOUKvSh4E4-fY",
@@ -21,7 +16,6 @@
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
-  const auth = getAuth(app);
   localStorage.clear();
 
   var uid=JSON.parse(sessionStorage.getItem("id"));
@@ -33,7 +27,9 @@
     console.log("users/"+JSON.parse(sessionStorage.getItem("id")));
     get(child(dbref, "users/"+JSON.parse(sessionStorage.getItem("id")))).then((snapshot) => {
       if (snapshot.exists()) {
-        document.getElementById("nameOfUser").innerHTML=snapshot.val().name;
+        document.getElementById("nameOfUser").innerHTML=snapshot.val().Name;
+        document.getElementById("emailOfUser").innerHTML=snapshot.val().Email;
+        document.getElementById("telOfUser").innerHTML=snapshot.val().Telephone;
       } else {
         console.log("No data available");
       }
