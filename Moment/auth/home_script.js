@@ -26,14 +26,14 @@
 
   var uid=JSON.parse(sessionStorage.getItem("id"));
    const db = getDatabase();
-
+  var nameOfCurrentUser;
   function SelectData()
   {
     const dbref = ref(db);
     console.log("users/"+JSON.parse(sessionStorage.getItem("id")));
     get(child(dbref, "users/"+JSON.parse(sessionStorage.getItem("id")))).then((snapshot) => {
       if (snapshot.exists()) {
-        console.log(snapshot.val().name);
+        document.getElementById("nameOfUser").innerHTML=snapshot.val().name;
       } else {
         console.log("No data available");
       }
