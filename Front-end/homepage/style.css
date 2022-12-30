@@ -28,37 +28,37 @@ nav {
   z-index: 50;
 }
 
-.logo {
+#logo {
   display: flex;
   align-items: center;
   margin-left: 20px;
 }
 
-.logo a {
+#logo a{
   font-size: 2.2rem;
   font-weight: 700;
   text-decoration: none;
 }
 
-.menu {
+#menu {
   display: flex;
   align-items: center;
   height: 100%;
 }
 
-.menu ul {
+#menu ul {
   display: flex;
   list-style: none;
   margin-left: 500px;
   align-items: center;
 }
 
-.menu ul li {
+#menu ul li {
   margin-left: 70px;
   font-size: 20px;
 }
 
-.menu ul li a {
+#menu ul li a {
   text-decoration: none;
 }
 
@@ -67,32 +67,32 @@ main {
   margin: 150px 0 0 0;
   text-align: center;
 }
-.welc p {
+#greeting1{
   color: rgb(165, 13, 150);
   font-size: 2rem;
   text-transform: capitalize;
   margin-bottom: 25px;
 }
-.exc p {
+#greeting2{
   font-size: 3rem;
   text-transform: capitalize;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
-.eas p {
+#greeting3{
   font-size: 1.5rem;
   margin-bottom: 50px;
 }
 
 /* ...................login button................... */
-.login-btn {
+#login-button{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.login-btn button {
+#login-button button{
   padding: 20px 35px;
   border: none;
   outline: none;
@@ -104,7 +104,7 @@ main {
   color: black;
 }
 
-.btn1 {
+#organiser-login-button{
   background: rgb(255, 0, 255);
   background: -moz-linear-gradient(
     350deg,
