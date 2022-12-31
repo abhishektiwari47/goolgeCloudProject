@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Moments</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,15 +12,22 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
       rel="stylesheet"
     />
+  
   </head>
   <body>
     <!-- Navbar -->
-    <nav>
-      <div id="logo">
+    <nav class="navbar">
+      <div class="logo">
         <a href="/">Moments</a>
       </div>
-
-      <div id="menu">
+      
+       <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+       </a>
+      
+      <div class="navbar-links">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Offers</a></li>
@@ -40,10 +47,12 @@
           <br />Get all the photos in one go.
         </p>
       </div>
-        <div  class="division" id="login-button">
+        <div id="login-button">
             <button id="organiser-login-button">Organiser Login</button>
             <button id="participant-login-button">Participant Login</button>
         </div>
     </main>
+    <script src="script.js"></script>
   </body>
+  
 </html>
