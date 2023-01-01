@@ -80,6 +80,10 @@ background-color: white;
 border-radius: 10px;
 }
 
+#participant-login-button a{
+  color: black;
+}
+
 @media (max-width: 600px){
 .toggle-button{
   display: flex;
