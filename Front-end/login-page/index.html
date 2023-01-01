@@ -47,10 +47,10 @@
       </div>
 
       <!-- Login -->
-      <div class="login">
+      <div class="auth" id="login-div">
         <form action="/" method="post">
-          <p class="log-title">Login</p>
-          <p class="log-p">Sign in to your account</p>
+          <p class="auth-title">Login</p>
+          <p class="auth-p">Sign in to your account</p>
           <div class="user-name log-box">
             <img
               src="https://img.icons8.com/ios-glyphs/30/null/person-male.png"
@@ -61,12 +61,43 @@
             <img src="https://img.icons8.com/ios-glyphs/30/null/key--v1.png" />
             <input type="password" placeholder="Password" />
           </div>
-          <button class="log-button">Login</button>
+          <button class="auth-button">Login</button>
           <p class="fp"><a href="/">Forgot Password?</a></p>
-          <button class="reg">Register new account</button>
+          <p id="create-account">Register new account</button>
         </form>
       </div>
-
+      <!-- SignUp division, I have given default values to the inputs for making development process easier you can remove them-->
+      <div class="auth" id="signup-div">
+        <form action="/" method="post">
+        <h2 class="auth-title">Signup</h2>
+        <p class="auth-p">Sign in to your account</p>
+        <div class="user-name log-box">
+          <img
+            src="https://img.icons8.com/ios-glyphs/30/null/person-male.png"
+          />
+          <input type="text" placeholder="Username" />
+        </div>
+        <div class="user-email log-box">
+          <img
+            src="https://img.icons8.com/ios-glyphs/30/null/person-male.png"
+          />
+          <input type="email" placeholder="Email" />
+        </div>
+        <div class="user-tel log-box">
+          <img
+            src="https://img.icons8.com/ios-glyphs/30/null/person-male.png"
+          />
+          <input type="tel" placeholder="Tel" />
+        </div>
+         <div class="pass log-box">
+          <img src="https://img.icons8.com/ios-glyphs/30/null/key--v1.png" />
+          <input type="password" placeholder="Password" />
+        </div>
+        <button class="auth-button" id="signup-button">signup</button>
+        <p class="fp"><a href="/">Forgot Password?</a></p>
+        <p id="have-account" >Already Have An Account?</button>
+      </form>
+        </div>
       
     </main>
 
